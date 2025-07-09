@@ -1,0 +1,84 @@
+body {
+    justify-content: center;
+    background: #f4f4f4;
+    align-items: center;
+}
+
+.player {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    width: 500px;
+}
+
+.player h2 {
+    margin-bottom: 15px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.track-info {
+    color: #333333;
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.track-info .title span,
+.track-info .author span {
+    font-weight: bold;
+    color: #00bcd4;
+}
+
+.disk {
+    width: 130px;
+    height: 120px;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: spin 5s linear infinite;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.disk img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    transform: translateY(3px);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+button:active {
+    background-color: #ffffff;
+    transform: translateY(2px);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    margin-top: 2%;
+    border: none;
+    background-color: #ffffff;
+    font-size: large;
+}
